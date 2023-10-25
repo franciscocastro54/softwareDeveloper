@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <title>Mi CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            box-sizing: border-box;
+        }
+
+        header,
+        nav {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .main-content {
+            flex: 0 0 55%;
+            /* Ocupa el 70% del espacio disponible */
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .sidebar-content {
+            flex: 0 0 45%;
+            /* Ocupa el 30% del espacio disponible */
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+
+        .job {
+            margin-top: 10px;
+        }
+
+        .job h3 {
+            margin-top: 0;
+        }
+
+        .job p {
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 0.8rem;
+            text-align: justify;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <button id="downloadPdf">Descargar como PDF</button>
+
+
+    <div id="cv">
+        <header>
+            <h1>Francisco Castro Zuleta</h1>
+            <p>Desarrollador XR</p>
+        </header>
+
+        <div class="container">
+            <div class="sidebar-content">
+
+
+                <section id="experiencia">
+                    <h2>Contacto</h2>
+                    <div class="job">
+                        <h3>Teléfono</h3>
+                        <p><a href="https://api.whatsapp.com/send?phone=56935232158" target="_blank">+569 35232158</a>
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Email</h3>
+                        <p><a href="mailto:francisco.castro.init@gmail.com">francisco.castro.init@gmail.com</a></p>
+                    </div>
+
+
+                    <div class="job">
+                        <h3>Github</h3>
+                        <p> <a href="https://github.com/franciscocastro54"
+                                target="_blank">https://github.com/franciscocastro54</a>
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <h3>LinkedIn</h3>
+                        <p> <a href="https://linkedin.com/in/francisco-castro-zuleta"
+                                target="_blank">https://linkedin.com/in/francisco-castro-zuleta</a></p>
+                        </p>
+                    </div>
+
+                </section>
+
+
+                <section id="habilidades">
+                    <h2>Habilidades</h2>
+                    <div class="job">
+                        <h3>Lenguajes</h3>
+                        <p>Javascript(ES6),TypeScript, Java,
+                            C++, C#, CSS, HTML5, MySQL</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Herramientas y plataformas</h3>
+                        <p>Git, github, NetBeans, VsCode, Visual
+                            Studio, Hostinger, Linux, Unity, Blender</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Librerías y frameworks</h3>
+                        <p>React, Neutralino JS, Bootstrap 5,
+                            JQuery, Mantine Js, nodejs, MRTK, XR interaction Toolkit</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Idiomas</h3>
+                        <p>Inglés Avanzado, español nativo</p>
+                    </div>
+
+                </section>
+
+
+            </div>
+            <div class="main-content">
+                <section id="sobre-mi">
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Soy un desarrollador de software con una especialización en la creación de experiencias
+                        inmersivas
+                        en realidad virtual y realidad aumentada. A lo largo de mi carrera, he demostrado una capacidad
+                        única para liderar y colaborar dentro de equipos de trabajo, garantizando siempre la entrega de
+                        soluciones innovadoras y de alta calidad. He trabajado eficientemente utilizando metodologías
+                        ágiles, lo que me ha permitido adaptarme rápidamente a los cambios y entregar resultados de
+                        manera
+                        oportuna. Poseo una pasión por la investigación y el aprendizaje continuo, lo que me ha llevado
+                        a
+                        adquirir de forma autodidacta conocimientos sobre las últimas tecnologías y tendencias en el
+                        sector.
+                        Estoy comprometido con el avance y la innovación, y busco constantemente oportunidades para
+                        aplicar
+                        mis habilidades y experiencia en proyectos desafiantes y significativos.
+                    </p>
+                </section>
+
+                <section id="experiencia">
+                    <h2>Educación y experiencia</h2>
+                    <div class="job">
+                        <h3>Scrum master / Desarrollador XR, Academia Politecnica Militar</h3>
+                        <h4>03/2023 - Presente</h4>
+                        <p>Desarrollo de experiencias VR/AR para dispositivos Meta Quest 2 y Hololens 2</p>
+                        <p>Gestión de equipo de desarrollo</p>
+                        <p>Optimización y testeo de aplicaciones</p>
+                    </div>
+                    <div class="job">
+                        <h3>Desarrollador Freelance, Plataforma Group Spa</h3>
+                        <h4>08/2022 - 09/2022</h4>
+                        <p>Diseño y desarrollo de librerías en C#
+
+                        </p>
+                        <p>Desarrollo de API</p>
+                        <p>Migración de librería netCore 5 a netStandard 2.0</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Analista Programador, Inacap Renca, Bravo de Saravia 2980</h3>
+                        <h4>2020 - 2022</h4>
+                        <p>Título de Analista Programador</p>
+                        <p>Proyecto de gestión de datos junto al área de minería</p>
+                        <p>Proyecto gestión de artículos sala de profesores</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Profesor Particular</h3>
+                        <h4>2020 - actualidad</h4>
+                        <p>Clases Educación media</p>
+                        <p>Clases fundamentos de programación</p>
+                        <p>Clases desarrollo de videojuegos</p>
+                    </div>
+
+                </section>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+        const element = document.getElementById('cv');
+        const opt = {
+            margin: [0, 30],
+            filename: 'miCV.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a2', orientation: 'portrait' }
+        };
+
+        // Generar PDF y descargarlo
+        html2pdf().from(element).set(opt).save();
+    });
+</script>
+
+</html>
